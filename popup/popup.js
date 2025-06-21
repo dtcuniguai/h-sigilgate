@@ -24,7 +24,7 @@ document.querySelectorAll(".option-button").forEach(button => {
 
 // 尻尻去
 document.getElementById("openUrlButton").addEventListener("click", () => {
-    
+
     const number = document.getElementById("numberInput").value;
     if (!number) {
         alert("請輸入編號");
@@ -32,5 +32,9 @@ document.getElementById("openUrlButton").addEventListener("click", () => {
     }
 
     // 發送消息給背景腳本
-    chrome.runtime.sendMessage({ action: "openUrl", number, selectedSite });
+    chrome.runtime.sendMessage({
+        action: "openUrl",
+        magicCode: number,
+        selectedSite: selectedSite
+    });
 });

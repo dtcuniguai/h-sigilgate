@@ -3,6 +3,11 @@
   "name": "hentai sigil gate jumper",
   "description": "快速上車小工具",
   "version": "1.0.0",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting"
+  ],
   "background": {
     "service_worker": "background/handler.js",
     "type": "module"

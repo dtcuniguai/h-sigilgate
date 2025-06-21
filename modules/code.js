@@ -7,6 +7,7 @@ export default class Code {
     }
 
     getUrl(code) {
+        code = codeSafeGenerator(code);
         if (this.codeType === NHENTAI_TYPE) {
             return `${NHENTAI_HOST}/g/${code}`;
         } else if (this.codeType === WNACG_TYPE) {
@@ -15,4 +16,10 @@ export default class Code {
             throw new Error('Unknown code type');
         }
     }
+}
+
+
+function codeSafeGenerator(code) {
+    //只保留數字，移除其餘多餘的字元
+    return code.replace(/[^0-9]/g, '');
 }

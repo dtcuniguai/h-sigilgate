@@ -7,7 +7,7 @@
 
 ### 由於 [Content Policies](https://developer.chrome.com/docs/webstore/program_policies/#content_policies)，。請依照以下步驟手動安裝
 
-Step 1：透過 `git clone https://github.com/andyching168/Nhentai2Panda.git` 獲取原始碼，或是到 Releases 下載 zip 壓縮檔。
+Step 1：透過 `git clone https://github.com/dtcuniguai/h-sigilgate` 獲取原始碼，或是到 Releases 下載 zip 壓縮檔。
 
 Step 2：至 `chrome://extensions/` 打開開發人員模式。
 

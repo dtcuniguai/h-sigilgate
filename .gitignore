@@ -1,0 +1,40 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Chrome Extension Build Artifacts
+*.crx
+*.pem
+*.zip
+
+# MacOS
+.DS_Store
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+
+# Environment Files
+.env
+.env.local
+.env.*.local
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# Dist/Build Output
+dist/
+build/

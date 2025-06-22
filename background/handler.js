@@ -37,6 +37,14 @@ chrome.runtime.onInstalled.addListener(() => {
         title: "前往紳士漫畫(wnacg.com)",
         contexts: ["all"]
     });
+
+    // sub menu3
+    chrome.contextMenus.create({
+        id: "18comicMenu",
+        parentId: "mainMenu", // 指定父級選單
+        title: "前往禁漫天堂(18comic.org)",
+        contexts: ["all"]
+    });
 });
 
 // 右鍵選單點擊事件
@@ -49,6 +57,8 @@ chrome.contextMenus.onClicked.addListener((info) => {
         selectedSite = "nhentai";
     } else if (info.menuItemId === "wnacgMenu") {
         selectedSite = "wnacg";
+    } else if (info.menuItemId === "18comicMenu") {
+        selectedSite = "18comic";
     }
 
     // 發送消息給背景腳本

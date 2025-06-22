@@ -1,6 +1,6 @@
 'use strict';
 
-import Code from '../modules/code.js';
+import {getHentaiInstance} from '../dist/modules/hentaiFactory.js'
 
 // 神秘數字開啟分頁
 function baseHandler(request) {
@@ -8,8 +8,8 @@ function baseHandler(request) {
         //init const
         const code = request.magicCode;
         const selectedSite = request.selectedSite;
-        const hentai = new Code(selectedSite);
-        chrome.tabs.create({ url: hentai.getUrl(code) });
+        const website = getHentaiInstance(selectedSite);
+        chrome.tabs.create({ url: website.getUrl(code) });
     }
 }
 

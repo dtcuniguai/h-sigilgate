@@ -36,5 +36,5 @@ logs/
 *.orig
 
 # Dist/Build Output
-dist/
+# dist/
 build/

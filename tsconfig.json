@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                  // 編譯為 ES6（Chrome 擴充功能支持 ES6）
+    "module": "ESNext",               // 使用 ES 模組
+    "outDir": "./dist",               // 編譯輸出的目錄
+    "rootDir": "./",                  // 原始文件的根目錄
+    "strict": true,                   // 啟用嚴格模式
+    "esModuleInterop": true,          // 支持 CommonJS 和 ES 模組互操作
+    "skipLibCheck": true              // 跳過類型檢查以加快編譯速度
+  },
+  "include": [
+    "modules/**/*.ts"                 // 包含所有 TypeScript 文件
+  ],
+  "exclude": [
+    "node_modules"                    // 排除 node_modules
+  ]
+}

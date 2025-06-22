@@ -26,7 +26,7 @@ chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create({
         id: "nhentaiMenu",
         parentId: "mainMenu", // 指定父級選單
-        title: "前往 nhentai",
+        title: "前往 nhentai(nhentai.net)",
         contexts: ["all"]
     });
 
@@ -34,7 +34,7 @@ chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create({
         id: "wnacgMenu",
         parentId: "mainMenu", // 指定父級選單
-        title: "前往紳士禁漫",
+        title: "前往紳士漫畫(wnacg.com)",
         contexts: ["all"]
     });
 });
